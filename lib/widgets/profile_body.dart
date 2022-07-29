@@ -257,11 +257,13 @@ class _ProfileBodyState extends State<ProfileBody>
       child: SizedBox(
         //size를 부여
         height: 24,
-        child: OutlineButton(
+        child: OutlinedButton(
             onPressed: () {},
-            borderSide: BorderSide(color: Colors.black45),
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(6)), //borderside는 바깥 테두리
+            style: TextButton.styleFrom(
+                padding: EdgeInsets.all(16),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)),
+                backgroundColor: Colors.white54),//borderside는 바깥 테두리
             child: Text('Edit Profile',
                 style: TextStyle(fontWeight: FontWeight.bold))),
       ),
